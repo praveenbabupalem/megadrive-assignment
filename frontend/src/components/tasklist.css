@@ -1,0 +1,211 @@
+.task-list-container {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e0e7ff);
+    margin: 20px;
+    padding: 30px;
+}
+
+.task-list {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.task-list h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: linear-gradient(to right, #f0f9ff, #cfe0fc);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+span {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Status styled like buttons */
+.status-button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Status Colors */
+.status-pending {
+    background-color: #ffc107;
+    color: white;
+}
+
+.status-in-progress {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.status-done {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-completed {
+    background-color: #6f42c1;
+    color: white;
+}
+
+button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Button Colors */
+button:nth-child(3) {
+    background-color: #007bff;
+    color: white;
+}
+
+button:nth-child(3):hover {
+    background-color: #0056b3;
+}
+
+button:nth-child(4) {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:nth-child(4):hover {
+    background-color: #c82333;
+}
+
+/* Input and Dropdown Styling */
+input[type="text"] {
+    padding: 8px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    color: #333;
+    font-size: 14px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: linear-gradient(to right, #fff, #f9f9f9);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+select option {
+    background-color: white;
+    color: #333;
+}
+
+/* TaskForm Button */
+.task-form button {
+    background-color: #28a745;
+    color: white;
+}
+
+.task-form button:hover {
+    background-color: #218838;
+}
+
+.task-form input {
+    padding: 10px;
+    width: 75%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styled for status */
+.status-button {
+    padding: 8px 15px;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+    color: white; /* Default text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Status Colors */
+.status-button.pending {
+    background-color: #ffc107; /* Yellow */
+}
+
+.status-button.in-progress {
+    background-color: #17a2b8; /* Cyan */
+}
+
+.status-button.done {
+    background-color: #28a745; /* Green */
+}
+
+.status-button.completed {
+    background-color: #6f42c1; /* Purple */
+}
+
+/* Hover effects */
+.status-button:hover {
+    opacity: 0.9; /* Slightly transparent on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Focus effects for accessibility */
+.status-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus shadow */
+}

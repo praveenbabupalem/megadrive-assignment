@@ -1,0 +1,74 @@
+.profile-container{
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #5da8d9, #e0e7ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width:60vw;
+    text-align: center;
+}
+
+.profile h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #fff;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Add some spacing around the form elements */
+input,
+button {
+    margin-bottom: 15px;
+}

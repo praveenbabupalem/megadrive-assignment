@@ -1,0 +1,99 @@
+.signup-container {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f0f9ff, #e0e7ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.signup-form input[type="text"]:focus,
+.signup-form input[type="email"]:focus,
+.signup-form input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #fff;
+}
+
+.signup-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.signup-form button:hover {
+    background-color: #0056b3;
+}
+
+.signup-form button:focus {
+    outline: none;
+}
+
+.signup-form button:active {
+    transform: scale(0.98);
+}
+
+/* Add some spacing around the form elements */
+.signup-form input,
+.signup-form button {
+    margin-bottom: 15px;
+}
+
+/* Subtle shadow for inputs and button */
+.signup-form input,
+.signup-form button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a bit more focus to the inputs */
+.signup-form input:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
